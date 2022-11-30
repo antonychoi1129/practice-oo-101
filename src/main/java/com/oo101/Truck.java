@@ -1,6 +1,6 @@
 package com.oo101;
 
-public class Truck {
+public class Truck implements Vehicles {
     private String name;
     private int speed;
 
