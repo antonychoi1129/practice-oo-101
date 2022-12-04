@@ -2,13 +2,12 @@ package com.oo101;
 
 public class Main {
     public static void main(String[] args) {
-        Vehicles coolCar = new Car("Cool Car", 30);
-        Vehicles bigTruck = new Truck("Big Truck", 15);
-        Driver driver = new Driver(coolCar);
-        Driver driver1 = new Driver(bigTruck);
-        System.out.println(coolCar.speedUp());
-        System.out.println(bigTruck.speedUp());
-        System.out.println(driver.speedUp());
-        System.out.println(driver1.speedUp());
+        Car coolCar = new Car("Cool Car", new Gasoline());
+        Driver carDriver = new Driver(coolCar);
+        carDriver.speedUp();
+
+        Truck bigTruck = new Truck("Big Truck", 10);
+        Driver truckDriver = new Driver(bigTruck);
+        truckDriver.speedUp();
     }
 }

@@ -1,13 +1,13 @@
 package com.oo101;
 
 public class Driver {
-    private Vehicles vehicles;
+    private final Vehicle vehicle;
 
-    public Driver(Vehicles vehicles) {
-        this.vehicles = vehicles;
+    public Driver(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
-    public String speedUp(){
-        return vehicles.speedUp();
+    public void speedUp(){
+        this.vehicle.speedUp();
     }
 }
